@@ -1,0 +1,218 @@
+/* Mobile Responsiveness */
+
+@media (min-width:980px) {
+  .mobile-nav {
+    display: none;
+
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+}
+
+
+
+/* Header Styling  */
+
+@media (max-width:788px) {
+  header nav {
+    background-color: transparent;
+
+  }
+
+  header nav ul a {
+    display: none;
+  }
+
+
+}
+
+
+/* Mission section */
+
+@media (max-width: 768px) {
+  .mission-container {
+    flex-direction: column;
+
+  }
+
+  .missionContent {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .missionImage {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Vision and Mission Container */
+@media (max-width:780px) {
+  .gallaryContainer {
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    gap: 15px;
+    /* background-color: orange; */
+  }
+
+  .gallaryContainer img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .gallaryContent {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1000px;
+
+    /* background-color: orange; */
+  }
+
+
+  .gallaryContent p {
+    font-size: 25px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .buttons {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+  }
+
+
+
+}
+
+
+/* Vision section */
+@media (max-width:780px) {
+  .visionSection {
+    display: block;
+    width: 100%;
+    margin: auto;
+    /* background-color: orange;   */
+  }
+
+
+  .Containner {
+    display: block;
+    width: 100%;
+    height: auto;
+
+  }
+
+
+  .VisionContent p {
+    font-size: 19px;
+  }
+
+
+
+  .vision-image img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+
+  #image2 {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .myMisionImage img {
+    width: 100%;
+
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .myMisionContent {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+
+/* FavoritePortfolio  section */
+@media (max-width:780px) {
+  .myFavoritePortfolio {
+    width: 100%;
+    height: auto;
+  }
+
+  .mainContainer {
+    display: block;
+    width: 100%;
+    margin: auto;
+    /* background-color: red; */
+  }
+
+
+  .indivitualImage {
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    margin: auto;
+  }
+
+  .indivitualImage img {
+    display: block;
+    margin: auto;
+    /* background-color: orange;/ */
+  }
+
+  .image {
+    width: 60%;
+  }
+
+
+  .myPortfolio {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    /* background-color: orange; */
+  }
+
+  .imageContent {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple;  */
+  }
+
+
+}

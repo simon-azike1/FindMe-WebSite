@@ -1,0 +1,730 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+  
+}
+
+
+.scrollable {
+  overflow-y: auto;
+  
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+:root {
+  --primary-color: black;
+  --secondary-color: #333;
+  --tertiary-color: orange;
+  --primarywhite-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  margin: 0px;
+}
+
+.nav-bar ul {
+
+  align-items: flex-end;
+  padding: 0 20px;
+
+}
+
+ul,
+li {
+  list-style: none;
+  display: flex;
+  margin: 15px;
+}
+
+ul,
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
+a:hover {
+  color: var(--tertiary-color);
+  background-color: #fff;
+  transition: .3s;
+  padding: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+
+
+.contactNav{
+  width: 100%;
+  display: block;
+  /* background-color: orange; */
+
+}
+
+/* Logo */
+.logo {
+  margin: 20px;
+  margin-left: 15px;
+  padding: 10px;
+
+}
+
+.logo-text {
+  color: #fff;
+}
+
+.logo-text:hover {
+  color: var(--tertiary-color);
+  cursor: pointer;
+  transition: .9s;
+}
+
+/* Brand Image */
+
+.img-container {
+  width: 50%;
+  height: 10%;
+  opacity: .7;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.fa-play {
+  color: black;
+  width: 29px;
+  height: 29;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  padding: 5em;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.rule {
+  margin: 10px;
+
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 15px;
+
+
+}
+
+h1 {
+  color: var(--tertiary-color);
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.btn,
+#btn2 {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.play {
+  font-size: 25px;
+  color: white;
+}
+
+#btn2 {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover,
+#btn2:hover {
+  background-color: var(--tertiary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+
+.intro-section {
+  padding: 20px;
+  margin-top: 10em;
+}
+
+/* Container for the introduction section */
+.aboutSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Styling for text section on the left */
+.introContent {
+  flex: 1;
+  padding-right: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+
+/* Styling for image section on the right */
+.introImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introImage img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 5px;
+
+}
+
+
+/* Container for About Me and About Portfolio sections */
+.aboutandPortfolio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+}
+
+.AboutMe,
+.aboutPortfolio {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.aboutmeGallary {
+  /* background-color: orange;  */
+  padding: 30px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.gallaryContainer img {
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+.contentContainer {
+  padding: 20px;
+  flex: 3;
+}
+
+.contentContainer,
+.gallaryContent {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.gallarycontent-p {
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
+
+.aboutone {
+  width: 100%;
+  padding: 10px;
+  /* background-color: orange; */
+  border-radius: 10px;
+}
+
+
+.rule2 {
+  border: 1px solid var(--primarywhite-color);
+  width: 40%;
+}
+
+.about-Me {
+  width: 50%;
+  display: inline;
+  padding: 10px;
+
+}
+
+.new1 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: var(--primarywhite-color);
+}
+
+.gallaryMe {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primarywhite-color);
+}
+
+.visionSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* background-color: rebeccapurple; */
+  padding: 5px;
+
+}
+
+.Containner {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+  padding: 30px;
+  /* background-color: red; */
+}
+
+.visionContent {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  /* background-color: green; */
+}
+
+.vision-image img {
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+
+
+
+/* #image2 {
+  width: 40%;
+  height: 90vh;
+  margin-top: 10px;
+ 
+}  */
+
+
+.rule3 {
+  border: 1px solid var(--primarywhite-color);
+  width: 20%;
+}
+
+.underlineSpan {
+  margin-left: 2em;
+  border-bottom: 1px solid var(--primarywhite-color);
+  text-decoration: underline;
+}
+
+
+.spaceLi {
+  margin-right: 10px;
+  color: white;
+}
+
+
+/* Mission section  */
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  justify-content: space-between;
+  /* background-color: darkblue; */
+}
+
+.missionContent {
+  width: 50%;
+  /* background-color: rebeccapurple; */
+  flex: 1;
+  padding: 20px;
+}
+
+.missionImage {
+  flex: 1;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* background-color: red; */
+}
+
+.missionImage img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+/* Favorite Portfolio */
+.myFavoritePortfolio {
+  display: block;
+  width: 100%;
+  /* background-color: pink;  */
+  padding: 10px;
+
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  /* background-color: orange; */
+  padding: 10px;
+  margin: 15px;
+  justify-content: center;
+
+}
+
+.indivitualImage {
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+  align-items: center;
+  font-size: 20px;
+  /* background-color: red; */
+}
+
+
+
+.bigHeading {
+  text-align: center;
+  color: #f9f8f8;
+  margin-top: 20px;
+}
+
+
+
+.image {
+  width: 50%;
+  margin: 15px;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.indivitualImage,
+.heading {
+  margin: 25px;
+  color: white;
+}
+
+
+
+.favoriteContent {
+  width: 50%;
+  text-align: center;
+  /* background-color: orange; */
+  padding: 10px;
+  margin: auto;
+}
+
+
+.myTeam {
+  /* background-color: orange; */
+  max-width: 1780px;
+  width: 100%;
+  align-items: center;
+}
+
+.teamOne {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  /* background-color: green;  */
+
+}
+
+.teamContent {
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.heading {
+  text-align: center;
+}
+
+.teamImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.myPortfolio {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  /* background-color: rgb(238, 114, 114); */
+}
+
+.imageContent {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigImage {
+  max-width: 100%;
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+
+}
+
+.smallImage {
+  max-width: 100%;
+  width: 90%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+
+
+}
+
+
+.teamTwo {
+  font-size: 23px;
+  color: rgb(255, 254, 254);
+  margin-top: 10px;
+
+}
+
+.content {
+  margin-top: 40px;
+  /* background-color: red; */
+  width: 85%;
+  padding: 13px;
+}
+
+
+.myContact {
+  display: flex;
+  margin: 15px;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.Contactcontent {
+  width: 100%;
+  /* background-color: orange; */
+  padding: 15px;
+  margin: 15px;
+}
+
+.contactandImage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orangered;  */
+}
+
+.contact {
+  color: white;
+}
+
+.contactImage {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+.contact-p {
+
+  margin-bottom: 15px;
+}
+
+.contactMe-List {
+  display: block;
+  padding: 10px;
+  width: 70%;
+  /* background-color: rebeccapurple; */
+}
+
+.contactMe-List li {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.fa-phone {
+  margin-right: 10px;
+}
+
+.fa-envelope {
+  margin-right: 10px;
+}
+
+.fa-globe {
+  margin-right: 10px;
+}
+
+.fa-location-crosshairs {
+  margin-right: 10px;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 45px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(248, 244, 244);
+  margin: 10px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-10px, 1px);
+}
+
+.hamburger.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-10px, -2px);
+}
+
+.hamburger.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+
+/* Mobile Nav  Styling */
+.mobile-nav {
+  width: 50%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  background-color: var(--primary-color);
+  padding-top: 120px;
+  transition: 0.4s;
+  opacity: 0.8;
+}
+
+
+/*Mobile Anchor tag Styling */
+.mobile-nav a {
+  font-size: 25px;
+  max-width: 760px;
+  width: 20%;
+  display: block;
+  text-decoration: none;
+  color: white;
+ padding:10px;
+  text-align: center;
+  margin: auto;
+}
+
+.mobile-nav a:hover {
+  background-color: var(--primary-color);
+  color: rgb(134, 40, 40);
+  
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 1.0s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* remember to add the animation delay to your desired features using animation-delay:0.5s */
